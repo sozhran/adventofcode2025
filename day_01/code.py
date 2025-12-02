@@ -3,6 +3,8 @@ input = open('./input.txt', 'r').read().split('\n')
 dial_position = 50
 result1 = 0
 
+# Part 1
+
 for item in input:
     if not item:
         continue
@@ -16,6 +18,7 @@ for item in input:
 
 print("PART 1: ", result1)
 
+# Part 2
 
 dial_position = 50
 result2 = 0
