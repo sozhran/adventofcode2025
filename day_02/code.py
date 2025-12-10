@@ -1,6 +1,7 @@
 import math
 
-input = open('./input.txt', 'r').read().split(',')
+with open('./input.txt', 'r') as file:
+    input = file.read().split(',')
 
 # Part 1
 
@@ -37,7 +38,7 @@ for item in input:
 for id in ids_to_check:
     for i in range(1, math.floor(len(id) / 2) + 1):
         if len(id) % i == 0 and id == id[:i] * int(len(id) / i ):
-            result2 += (int(id))
+            result2 += int(id)
             break
 
 print("RESULT 2: ", result2)

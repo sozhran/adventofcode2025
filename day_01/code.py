@@ -1,4 +1,5 @@
-input = open('./input.txt', 'r').read().split('\n')
+with open('./input.txt', 'r') as file:
+    input = file.read().split('\n')
 
 dial_position = 50
 result1 = 0
