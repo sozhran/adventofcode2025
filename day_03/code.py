@@ -24,7 +24,7 @@ def joltage_finder(data: str):
 
     return None
 
-for line_index, line in enumerate(input):
+for line in input:
     x = joltage_finder(line)
     if x is not None:
         result1 += x
